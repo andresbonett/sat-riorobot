@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Hello World!!</title>
     <style>
-        table { border-collapse: collapse; }
-        table, th, td { border: 1px solid black; }
+      table {
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Hello World!</h1>
+    <div>
+      <div>
+        <div id="listPort">NO devices conected</div>
+      </div>
+      <button id="scan">Scan</button>
+    </div>
 
-    We are using Node.js <span id="node-version"></span>, Chromium <span id="chrome-version"></span>, Electron <span id="electron-version"></span>, and Serialport <span id="serialport-version"></span>
-
-    <div id="error"></div>
+    <!-- render -->
     <div id="ports"></div>
-</body>
+  </body>
 
-<script src="./renderer.js"></script>
-
+  <script src="./src/app.js"></script>
 </html>
