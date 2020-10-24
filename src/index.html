@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>RioRobot!!</title>
+    <!-- <link rel=”shortcut icon” type=”image/ico” href='/src/assets/favicon.ico' /> -->
+
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h2 class="title">RioRobot Serial Port</h2>
+      <img src="assets/hero-img.png" alt="" class="logo" />
+    </nav>
+
+    <div class="main">
+      <div class="card">
+        <h3>Distancia</h3>
+        <div class="distancia" id="nivel">
+          <img src="assets/power-off-solid.svg" alt="" id="boton" />
+        </div>
+        <span>cm</span>
+      </div>
+
+      <div id="online" class="menu">OFF</div>
+    </div>
+  </body>
+
+  <script src="./app.js"></script>
+</html>
